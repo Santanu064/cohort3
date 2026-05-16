@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #000000;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "l-top l-center1 r-center r-top"
+    "l-top l-center1 r-center r-middle"
+    "l-bottom l-center2 r-center r-middle"
+    "l-bottom l-center3 r-bottom r-bottom"
+    "l-bottom l-center4 r-bottom r-bottom";
+}
+.l-top{
+    background-color: #9e54f3;
+    border-radius: 30px;
+    grid-area: l-top;
+}
+.l-center1{
+    background-color: #161718;
+    border-radius: 30px;
+    grid-area: l-center1;
+}
+.r-center{
+     background-color: #161718;
+     border-radius: 30px;
+     grid-area: r-center;
+}
+.r-top{
+    background-color: #9e54f3;
+    border-radius: 30px;
+     grid-area: r-top;
+}
+.l-bottom{
+     background-color: rgb(211, 214, 10);
+     grid-area: l-bottom;
+}
+.l-center2{
+     background-color: rgb(222, 93, 12);
+      grid-area: l-center2;
+}
+.r-middle{
+    background-color:  #d5f155;
+    border-radius: 30px;
+    
+      grid-area: r-middle;
+}
+.l-center3{
+     background-color: rgb(219, 16, 206);
+      grid-area: l-center3;
+}
+.l-center4{
+     background-color: rgb(204, 28, 28);
+      grid-area: l-center4;
+}
+.r-bottom{
+     background-color: rgb(148, 255, 112);
+      grid-area: r-bottom;
+}
